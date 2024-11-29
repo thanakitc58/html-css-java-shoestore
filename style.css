@@ -147,7 +147,7 @@ nav{
     .modal{
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.7);
         position: fixed;
         top: 0;
         left: 0;
@@ -158,11 +158,13 @@ nav{
 
         .modal-page{
             min-width: 30vw;
-            max-width: 45vw;
+            max-width: 60vw;
             max-height: 30vw;
-            background: #f2f2f2;
+            background: #fff;
             border-radius: 10px;
-            padding: 20px;
+            padding:20px;
+            overflow-y: scroll;
+            
         }
         .modal-content{
             
@@ -179,10 +181,69 @@ nav{
 
             .modal-content-text{
                 margin-left: 15px;
+            
             }
 
             .btn-control{
-                background-color: pink;
+                
+                margin-top: 15px;
+                display: flex;
+                justify-content: flex-end;
             }
+            
+            .btn{
+                padding: 10px 20px;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.2vw;
+                transition: 0.3s;
+            }
+            .btn-buy{
+                background:linear-gradient(125deg, #e61b36, #9C1032) ;
+                color: #fff;
+                margin-left: 10px;
+            }
+        }
+
+        .class-list{
+          
+            margin-top: 10px;
+            
+            .classlist-item{
+                display: flex;
+                justify-content: space-between;
+                width: 40vw;
+                margin-bottom: 20px;
+
+                .classlist-left{
+                    
+                    display: flex;
+
+                }
+                .classlist-right{
+                 
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .classlist-left img{
+            width: 5vw;
+            height: 5vw;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .btnc{
+            width: 30px;
+            height: 30px;
+            
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.5px solid black;
+            cursor: pointer;
         }
     }
